@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="신고하기"
+        android:textSize="23sp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@color/mainColor_down"
+        android:textColor="#ffffff"/>
+
+    <RadioGroup
+        android:id="@+id/report"
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="8dp">
+
+        <RadioButton
+            android:id="@+id/ad"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
+            android:textColor="@color/fontColor"
+            android:text="광고" />
+
+        <RadioButton
+            android:id="@+id/improper"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="적절하지 않은 내용/사진"
+            android:textSize="18sp"
+            android:textColor="@color/fontColor"/>
+
+        <RadioButton
+            android:id="@+id/lash"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="욕설, 비난"
+            android:textSize="18sp"
+            android:textColor="@color/fontColor"/>
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp">
+        <Button
+            android:id="@+id/report_chk"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="확인"
+            android:textSize="18dp"
+            android:layout_marginLeft="35dp"
+            android:textColor="@color/mainColor_down"
+            android:background="@drawable/button_down_border"/>
+        <Button
+            android:id="@+id/report_cancel"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="취소"
+            android:textSize="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="35dp"
+            android:textColor="@color/mainColor_down"
+            android:background="@drawable/button_down_border"/>
+    </LinearLayout>
+
+</LinearLayout>

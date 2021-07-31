@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/tab1"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_home"
+        android:enabled="true"
+        android:checked="true"
+        android:title="홈화면" />
+
+    <item android:id="@+id/tab2"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_star"
+        android:enabled="true"
+        android:title="인기게시판"/>
+
+    <item android:id="@+id/tab3"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_sms"
+        android:enabled="true"
+        android:title="최근게시판"/>
+
+    <item android:id="@+id/tab4"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_account_circle"
+        android:enabled="true"
+        android:title="마이페이지"/>
+
+</menu>
+

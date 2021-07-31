@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="local">
+        <item>지역 선택</item>
+        <item>서울</item>
+        <item>경기도</item>
+        <item>강원도</item>
+        <item>충청도</item>
+        <item>전라도</item>
+        <item>경상도</item>
+    </string-array>
+
+    <string-array name="time">
+        <item>시간대 선택</item>
+        <item>새벽</item>
+        <item>오전</item>
+        <item>오후</item>
+        <item>저녁</item>
+    </string-array>
+
+</resources>

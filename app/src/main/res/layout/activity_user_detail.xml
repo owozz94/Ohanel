@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserDetailActivity"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/mainColor_up"
+        app:titleTextColor="#ffffff"
+        app:title="PROFILE UPDATE"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/profile_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/person" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="▶ 이름"
+                android:textSize="16sp"
+                android:textColor="@color/fontColor"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="5dp"/>
+
+            <EditText
+                android:id="@+id/userName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="20"
+                android:textSize="18sp"
+                android:textColor="@color/fontColor"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="▶ 소개"
+                android:textSize="16sp"
+                android:textColor="@color/fontColor"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="5dp"/>
+
+            <EditText
+                android:id="@+id/introduction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="20"
+                android:textColor="@color/fontColor"
+                android:hint="나를 표현해보세요!"
+                android:textSize="18sp"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="▶ 성별"
+                android:textSize="16sp"
+                android:textColor="@color/fontColor"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="5dp"/>
+
+
+            <RadioGroup
+                android:id="@+id/gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp">
+
+                <RadioButton
+                    android:id="@+id/women"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/fontColor"
+                    android:text="여성" />
+
+                <RadioButton
+                    android:id="@+id/man"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/fontColor"
+                    android:text="남성" />
+
+                <RadioButton
+                    android:id="@+id/etc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/fontColor"
+                    android:text="비공개" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="▶ 어디 하늘이 좋으신가요?"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/fontColor"/>
+
+            <Spinner
+                android:id="@+id/spinner_local"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:spinnerMode="dropdown"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="▶ 언제 하늘이 좋으신가요?"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/fontColor"/>
+
+            <Spinner
+                android:id="@+id/spinner_time"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:spinnerMode="dropdown"/>
+
+            <Button
+                android:id="@+id/userUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_up_border"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="20dp"
+                android:textColor="@color/mainColor_up"
+                android:text="회원 정보 수정" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10dp"
+                android:background="#bbbbbb"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="▶ Password"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/fontColor"/>
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textColor="@color/fontColor"
+                android:inputType="textPassword"
+                android:hint="비밀번호 입력"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="▶ Password Check"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/fontColor"/>
+
+            <EditText
+                android:id="@+id/passwordChk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textColor="@color/fontColor"
+                android:inputType="textPassword"
+                android:hint="비밀번호 확인"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/password_check"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/fontColor"
+                android:text="비밀번호를 한번 더 입력해주세요."/>
+
+            <Button
+                android:id="@+id/password_update"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_down_border"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="20dp"
+                android:textColor="@color/mainColor_down"
+                android:text="비밀번호 변경"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

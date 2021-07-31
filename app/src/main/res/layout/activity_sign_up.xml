@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/logToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/mainColor_up"
+        app:titleTextColor="#ffffff"
+        app:title="SIGN UP"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/idTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="▶ Email"
+                android:textColor="@color/fontColor"/>
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:hint="이메일 입력"
+                android:textSize="18sp"
+                android:textColor="@color/fontColor"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="▶ Password"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/fontColor"/>
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:hint="비밀번호 입력"
+                android:textSize="18sp"
+                android:textColor="@color/fontColor"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="▶ Password Check"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/fontColor"/>
+
+            <EditText
+                android:id="@+id/passwordChk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:hint="비밀번호 확인"
+                android:textSize="18sp"
+                android:textColor="@color/fontColor"/>
+
+            <TextView
+                android:id="@+id/password_check"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/fontColor"
+                android:text="비밀번호를 한번 더 입력해주세요."/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="▶ 성별"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/fontColor"
+                android:textSize="18sp" />
+
+            <RadioGroup
+                android:id="@+id/gender"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <RadioButton
+                    android:id="@+id/women"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="여성"
+                    android:textColor="@color/fontColor"/>
+
+                <RadioButton
+                    android:id="@+id/man"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="남성"
+                    android:textColor="@color/fontColor" />
+
+                <RadioButton
+                    android:id="@+id/etc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="비공개"
+                    android:textColor="@color/fontColor"/>
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="▶ 닉네임"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/fontColor"/>
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_gravity="left"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="20"
+                android:textColor="@color/fontColor"
+                android:textSize="18sp"
+                android:hint="10자 내로 입력해주세요."/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="▶ 어디 하늘이 좋으신가요?"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/fontColor"/>
+
+            <Spinner
+                android:id="@+id/spinner_local"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:spinnerMode="dropdown"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="▶ 언제 하늘이 좋으신가요?"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/fontColor"/>
+
+            <Spinner
+                android:id="@+id/spinner_time"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:spinnerMode="dropdown"/>
+
+            <Button
+                android:id="@+id/signUp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/button_down_border"
+                android:text="회원가입"
+                android:textColor="@color/mainColor_down"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+</LinearLayout>

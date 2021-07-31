@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "993527267901",
+    "firebase_url": "https://ohaneul-bc2ed.firebaseio.com",
+    "project_id": "ohaneul-bc2ed",
+    "storage_bucket": "ohaneul-bc2ed.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:993527267901:android:15628237f4f9af87326054",
+        "android_client_info": {
+          "package_name": "com.example.ohaneul"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "993527267901-63ara5jt9g3ck80h5q90crt15oq0tq40.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4b3gkRAJsAovIx_oy406a3CMIk-ram38"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "993527267901-63ara5jt9g3ck80h5q90crt15oq0tq40.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

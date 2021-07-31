@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_checked="true"
+        android:color="#ffffff"/>
+    <!-- 아이콘 터치시 색상 -->
+
+    <item
+        android:color="#ffffff"/>
+    <!-- 기본 색상값  -->
+
+
+</selector>
